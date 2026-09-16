@@ -1,5 +1,5 @@
 # Crear modelo de visita
-- propiiedad
+- Propiedad
 - Campo fecha con hora
 - contacto
 - state (nuevo, planificado, hecho, cancelado)
