@@ -25,13 +25,6 @@
   * Fianza
   * Estado (Borrador, En curso, Finalizado, Cancelado)
 
-* Modelo de incidencia (realestate.incident)
-  * Propiedad
-  * Descripción
-  * Fecha y hora
-  * Usuario asignado
-  * Prioridad (Baja, Media, Alta)
-  * Estado (Borrador, En progreso, Resuelta, Cancelada)
 
 # Seguridad
 
@@ -49,7 +42,6 @@ Añadir la categoría a las vistas de la propiedad.
 Añadir métodos que hagan un flujo de estados:
 * En la oferta: pasar a enviada, pasar a aceptada, pasar a rechazada y volver a borrador. Al aceptar una oferta, la propiedad tiene que quedar reservada.
 * En el contrato: pasar a en curso, pasar a finalizado, pasar a cancelado y volver a borrador.
-* En la incidencia: pasar a en progreso, pasar a resuelta, pasar a cancelada y volver a borrador.
 
 # Traducir
 
