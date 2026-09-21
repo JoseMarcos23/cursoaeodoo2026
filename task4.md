@@ -3,7 +3,6 @@
 # Etapas (antes de la kanban)
 Crear el modelo de etapas (realestate.property.stage) con nombre y secuencia.
 * Campo stage_id (Many2one) en la propiedad, por defecto la primera etapa.
-* Seguridad, menú, acción y vistas de listado y formulario de las etapas (como en categorías).
 * Añadir la etapa a las vistas de la propiedad.
 
 # Search
