@@ -11,6 +11,11 @@ class RealEstateProperty(models.Model):
     price = fields.Float(string='Price')
     availability = fields.Boolean(string='Available', default=True)
     user_id = fields.Many2one('res.users', string='Responsible')
+    category_id = fields.Many2one(
+        'real.estate.category',
+        string='Category',
+    )
+
     def action_reserve(self):
         self.ensure_one()
         self.availability = False
