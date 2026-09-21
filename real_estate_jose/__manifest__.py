@@ -1,0 +1,18 @@
+{
+    'name': 'Real Estate Jose',
+    'version': '19.0.1.0.0',
+    'summary': 'Gestión inmobiliaria',
+    'description': 'Módulo de prácticas para la gestión de propiedades inmobiliarias.',
+    'author': 'Jose Marcos',
+    'category': 'Real Estate',
+    'depends': ['base'],
+    'data': [
+    'security/real_estate_security.xml',
+    'security/ir.model.access.csv',
+    'views/real_estate_property_views.xml',
+    'views/real_estate_visit_views.xml',
+    'views/real_estate_property_menu.xml',
+],
+    'installable': True,
+    'application': True,
+}
