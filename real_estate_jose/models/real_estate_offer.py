@@ -37,7 +37,12 @@ class RealEstateOffer(models.Model):
 
     def action_set_draft(self):
         self.ensure_one()
+
+        was_accepted = self.state == 'accepted'
         self.state = 'draft'
+
+        if was_accepted:
+            self.property_id.availability = True
 
     def action_set_sent(self):
         self.ensure_one()
@@ -50,4 +55,9 @@ class RealEstateOffer(models.Model):
 
     def action_set_rejected(self):
         self.ensure_one()
+
+        was_accepted = self.state == 'accepted'
         self.state = 'rejected'
+
+        if was_accepted:
+            self.property_id.availability = True
